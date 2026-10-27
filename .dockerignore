@@ -1,0 +1,5 @@
+# Keep TLS keys and local build output out of the image build context.
+certs/
+node_modules/
+dist/
+.git/
