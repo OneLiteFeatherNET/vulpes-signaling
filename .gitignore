@@ -1,0 +1,22 @@
+# Node
+node_modules/
+dist/
+coverage/
+npm-debug.log*
+
+# Local TLS material (mkcert output for docker compose)
+certs/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
