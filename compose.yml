@@ -1,0 +1,13 @@
+services:
+  signaling:
+    build: .
+    image: vulpes-signaling:local
+    ports:
+      - "9000:9000"
+    environment:
+      PORT: "9000"
+      TLS_KEY_FILE: /certs/localhost-key.pem
+      TLS_CERT_FILE: /certs/localhost.pem
+    volumes:
+      - ./certs/localhost.pem:/certs/localhost.pem:ro
+      - ./certs/localhost-key.pem:/certs/localhost-key.pem:ro
